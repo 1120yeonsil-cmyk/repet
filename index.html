@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re:Pet - 반려동물 추모 앱</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌈 Re:Pet - 반려동물 추모 앱</h1>
+            <p>사랑했던 반려동물의 추억을 간직하세요</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <h2>📸 사진 업로드</h2>
+                <input type="file" id="photoInput" accept="image/*">
+                <img id="photoPreview" src="" alt="Preview">
+            </section>
+
+            <section class="prompt-section">
+                <h2>💭 추억 생성</h2>
+                <textarea id="promptInput" placeholder="반려동물의 추억을 입력하세요. 예: '들판에서 뛰어노는 모습'"></textarea>
+                <button id="generateBtn">✨ 추억 생성하기</button>
+            </section>
+
+            <section class="memory-section">
+                <h2>🌟 생성된 추억</h2>
+                <div id="memoryContainer"></div>
+            </section>
+
+            <section class="care-section">
+                <h2>💝 반려동물 돌보기</h2>
+                <div class="buttons">
+                    <button id="feedBtn">🍖 먹이주기</button>
+                    <button id="bathBtn">🛁 목욕</button>
+                    <button id="messageBtn">💬 응원 메시지</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Re:Pet - 반려동물 추모 앱</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
